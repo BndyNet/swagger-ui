@@ -1,0 +1,117 @@
+/* global */
+$brand-color: #106CC8 !default;
+$brand-color-dark: darken($brand-color, 15%);
+
+.topbar {
+  background-color: $brand-color;
+
+  .download-url-wrapper {
+
+    .download-url-button {
+      background-color: $brand-color-dark;
+    }
+
+    input[type=text] {
+      border-color: $brand-color-dark;
+    }
+  }
+}
+
+/* layout */
+& > .info {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+& > .swagger-ui {
+  padding: 0 30px;
+
+  .scheme-container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+& > .wrapper {
+  padding-right: 50px;
+
+  img[alt="Online validator badge"] {
+    display: none;
+  }
+}
+
+/* styles */
+.btn,
+select {
+  border-width: 1px;
+}
+
+.topbar {
+
+  .topbar-wrapper {
+
+    & > a:first-child {
+      img {
+        display: none;
+      }
+      span {
+        padding-left: 0;
+      }
+    }
+
+    .download-url-wrapper input[type=text] {
+      border-radius: 4px 0 0 4px;
+    }
+  }
+}
+
+.opblock-tag {
+  font-size: 18px;
+  padding: 5px 10px 5px 5px;
+
+  a:first-child {
+    text-transform: uppercase;
+  }
+}
+
+.opblock {
+  .opblock-summary {
+    padding: 3px;
+
+    .opblock-summary-method {
+      font-size: .75rem;
+      font-weight: normal;
+      padding: 3px 5px;
+      min-width: 60px;
+    }
+
+    .opblock-summary-path {
+      font-size: .85rem;
+      font-weight: normal;
+    }
+
+    .opblock-summary-description {
+      font-size: .75rem;
+      text-align: right;
+      padding-right: 10px;
+    }
+
+    .authorization__btn {
+      padding-left: 0;
+    }
+  }
+
+  .opblock-section-header {
+    min-height: inherit;
+  }
+}
+
+.model-box {
+  padding: 5px 10px;
+}
+
+section.models {
+  h4 {
+    padding-left: 15px;
+  }
+}
